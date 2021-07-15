@@ -8,5 +8,6 @@
         "SwitchCase": 1
       }
     ],
+    "semi": ["error", "always"]
   }
 }
