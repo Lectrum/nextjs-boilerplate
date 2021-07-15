@@ -1,0 +1,13 @@
+.container {
+  width: 80%;
+  margin: 0 auto;
+  min-height: 100vh;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  & > h1 {
+    font-size: 4rem;
+  }
+}
