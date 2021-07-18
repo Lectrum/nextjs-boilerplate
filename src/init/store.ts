@@ -91,5 +91,7 @@ export const initializeStore = (preloadedState = {}): Store => {
 };
 
 export const useStore = (initialState = {}): Store => {
-    return useMemo(() => initializeStore(initialState), [initialState]);
+    const storeFn = () => initializeStore(initialState);
+    
+    return useMemo(storeFn, [initialState]);
 };
